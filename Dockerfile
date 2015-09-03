@@ -1,7 +1,7 @@
 # DOCKER-VERSION 1.2.0
 # VERSION 0.1
 
-FROM openfirmware/mapnik
+FROM vincentds1/mapnik
 MAINTAINER James Badger <james@jamesbadger.ca>
 
 ENV DEBIAN_FRONTEND noninteractive
