@@ -25,3 +25,6 @@ cd /usr/local/share/maps/style/osm-bright-master
 
 cd ../OSMBright
 carto project.mml > OSMBright.xml
+
+chmod +x /etc/end.sh
+/bin/bash /etc/end.sh

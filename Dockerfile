@@ -20,6 +20,8 @@ COPY ./configure.py /usr/local/share/maps/style/osm-bright-master/configure.py
 COPY ./setup.sh /usr/local/share/maps/style/osm-bright-master/setup.sh
 COPY ./renderd.conf /usr/local/share/maps/style/OSMBright/renderd.conf
 
+ADD ./end.sh /etc/end.sh
+
 VOLUME ["/usr/local/share/maps/style/OSMBright", "/usr/local/share/maps/style/osm-bright-master"]
 
 ENTRYPOINT ["/usr/local/share/maps/style/osm-bright-master/setup.sh"]
