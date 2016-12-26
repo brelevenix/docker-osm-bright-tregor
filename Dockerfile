@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y ca-certificates node-carto unzip wget
 
 RUN mkdir -p /usr/local/share/maps/style
 WORKDIR /usr/local/share/maps/style
-RUN wget -q https://github.com/brelevenix/osm-bright/archive/master.zip &&\
+RUN wget -q https://github.com/brelevenix/osm-bright-tregor/archive/master.zip &&\
     unzip master.zip &&\
     rm master.zip
 
