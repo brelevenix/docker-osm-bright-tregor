@@ -13,6 +13,9 @@ WORKDIR /usr/local/share/maps/style
 RUN wget -q https://github.com/brelevenix/osm-bright-tregor/archive/master.zip &&\
     unzip master.zip &&\
     rm master.zip
+    
+# change directory name 
+RUN mv osm-bright-tregor-master osm-bright-master
 
 WORKDIR /usr/local/share/maps/style/osm-bright-master
 COPY ./osm-bright.osm2pgsql.mml /usr/local/share/maps/style/osm-bright-master/osm-bright/osm-bright.osm2pgsql.mml
